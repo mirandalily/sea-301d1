@@ -1,0 +1,4 @@
+# .gitignore
+
+**/githubToken.js
+**/.DS_store

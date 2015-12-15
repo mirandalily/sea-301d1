@@ -1,23 +1,20 @@
-var repoView = {};
+var aboutView = {};
 
-repoView.index = function() {
-  repoView.ui();
+aboutView.index = function() {
+  aboutView.ui();
 
   var _append = function(repo) {
-    $('#about ul').append(repoView.render(repo));
+    $('#about ul').append(aboutView.render(repo));
   };
-
-  repos.all.filter(
-    //TODO: How would you like to filter the repos?
-  )
-  .forEach(_append);
+  repos.all.forEach(_append);
 };
 
-repoView.render = function(repo) {
+aboutView.render = function(repo) {
   //TODO: How would you like to render this?
+  return $('<li>').text(repo.full_name);
 };
 
-repoView.ui = function() {
+aboutView.ui = function() {
   var $about = $('#about');
   var $ul = $about.find('ul');
 

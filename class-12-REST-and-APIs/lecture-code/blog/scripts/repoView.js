@@ -10,7 +10,6 @@ aboutView.index = function() {
 };
 
 aboutView.render = function(repo) {
-  //TODO: How would you like to render this?
   return $('<li>').text(repo.full_name);
 };
 
